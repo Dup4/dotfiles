@@ -105,8 +105,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias ll="ls -la"
 alias gz="tar -zxvf"
-alias cp="cp -i"
-
 
 # go to folder
 alias 2doc="cd ~/Documents"
