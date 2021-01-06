@@ -9,7 +9,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 ## install zsh plugins
 
 ```bash
-https://raw.githubusercontent.com/Dup4/My-Config-Files/master/zsh/install.sh
+curl https://raw.githubusercontent.com/Dup4/My-Config-Files/master/zsh/install.sh | sh
 ```
 
 ## .zshrc
