@@ -71,9 +71,6 @@ ZSH_THEME="agnoster"
 plugins=(
     git
     git-open
-    extract
-    cp
-    autojump
     zsh-syntax-highlighting 
     zsh-autosuggestions
 )
