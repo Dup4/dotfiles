@@ -114,4 +114,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-[ -f ~/.bashrc ] && source ~/.bashrc
+[ -f ~/dotfiles/utils/index.sh ] && source ~/dotfiles/utils/index.sh
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

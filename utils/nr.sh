@@ -1,0 +1,18 @@
+#! /bin/bash
+
+alias nio="ni --prefer-offline"
+alias s="nr start"
+alias d="nr dev"
+alias b="nr build"
+alias bw="nr build --watch"
+alias t="nr test"
+alias tu="nr test -u"
+alias tw="nr test --watch"
+alias w="nr watch"
+alias p="nr play"
+alias c="nr typecheck"
+alias lint="nr lint"
+alias lintf="nr lint --fix"
+alias f="nr format"
+alias release="nr release"
+alias re="nr release"

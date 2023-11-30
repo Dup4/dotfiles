@@ -1,3 +1,25 @@
 [user]
-	name = Dup4
-	email = panlvzhi@foxmail.com
+    name = Dup4
+    email = lyuzhi.pan@gmail.com
+    signingkey = your-signing-key 
+
+[commit]
+    gpgsign = true
+
+[gpg]
+    program = /usr/local/bin/gpg
+
+[pull]
+    rebase = false
+
+[core]
+    ignorecase = false
+
+[format]
+    signoff = true
+
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f
