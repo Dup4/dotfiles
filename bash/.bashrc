@@ -14,6 +14,7 @@ make2() {
             ver=11
         fi
     fi
+
     echo g++-10 -o $1 $1.cpp -O2 -O3 -DHOME -W -Wall -std=c++$ver
     g++-10 -o $1 $1.cpp -O2 -O3 -DHOME -W -Wall -std=c++$ver
 }
