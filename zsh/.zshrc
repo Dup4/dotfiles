@@ -69,10 +69,21 @@ ZSH_THEME="agnoster"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
+    man
+    iterm2
+    history
+    #    tmux
     git
     git-open
-    zsh-syntax-highlighting 
+    zsh-syntax-highlighting
     zsh-autosuggestions
+    brew
+    node
+    npm
+    nvm
+    python
+    pip
+    #    poetry
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -103,12 +114,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias ll="ls -la"
-alias gz="tar -zxvf"
-
-# go to folder
-alias 2doc="cd ~/Documents"
-alias 2dl="cd ~/Downloads"
-alias 2dt="cd ~/Desktop"
-
- [ -f ~/.bashrc ] && source ~/.bashrc
+[ -f ~/.bashrc ] && source ~/.bashrc
