@@ -1,5 +1,16 @@
 # dotfiles
 
+## macOS
+
+- HiddenBar
+  - `brew install hiddenbar`
+  - <https://github.com/dwarvesf/hidden>
+
+## Terminal
+
+- ripgrep
+- fzf
+
 ## Sponsors
 
 <p align="center">
