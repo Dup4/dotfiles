@@ -1,8 +1,6 @@
 #! /bin/bash
 
 function convert_heic() {
-    set -ex
-
     OUTPUT_DIR="./output"
 
     rm -rf "${OUTPUT_DIR}"
@@ -16,12 +14,11 @@ function convert_heic() {
             "${f}"
     done
 
-    cd "${OUTPUT}" || exit 1
+    pushd "${OUTPUT_DIR}" || exit 1
 
     # need ImageMagick
     for f in *.png; do
+        echo "convert strip ${f}"
         convert "${f}" -strip "${f}"
     done
-
-    set +ex
 }
