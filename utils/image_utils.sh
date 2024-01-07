@@ -3,18 +3,20 @@
 function convert_heic() {
     set -ex
 
-    rm -rf "./output"
-    mkdir -p "./output"
+    OUTPUT_DIR="./output"
+
+    rm -rf "${OUTPUT_DIR}"
+    mkdir -p "${OUTPUT_DIR}"
 
     for f in *.HEIC; do
         sips \
             -s format png \
             -Z 1920 \
-            --out "./out/${f%.*}.png" \
+            --out "./${OUTPUT_DIR}/${f%.*}.png" \
             "${f}"
     done
 
-    cd "./output" || exit 1
+    cd "${OUTPUT}" || exit 1
 
     # need ImageMagick
     for f in *.png; do
