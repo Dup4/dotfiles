@@ -19,6 +19,7 @@ function gpt() {
 
 function gcmc() {
     gcm
+    gl
     gml
     gmd
 }
