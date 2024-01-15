@@ -16,3 +16,9 @@ function gmd() {
 function gpt() {
     git push --tags
 }
+
+function gcmc() {
+    gcm
+    gml
+    gmd
+}
