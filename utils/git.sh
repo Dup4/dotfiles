@@ -23,3 +23,12 @@ function gcmc() {
     gml
     gmd
 }
+
+function gdl() {
+    git fetch -p
+    git branch -v | grep "\[gone\]"
+}
+
+function gdd() {
+    gdl | awk '{print $1}' | xargs git branch -D
+}
